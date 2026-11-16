@@ -29,7 +29,10 @@
     <h1>Energy: <span class="red">Claimed</span> vs <span class="green">Actual</span></h1>
     <p>Open database of power plant emissions, coal dependence, and renewable transition. Verified via satellite data. No source — no publication.</p>
   </section>
-  
+
+  <!-- LIVE COUNTERS -->
+  <section id="live-counters"></section>
+
   <section class="stats" id="stats"></section>
   
   <div class="filters">
@@ -63,7 +66,7 @@
   <section id="cards" class="grid"></section>
   <div id="pagination" class="pagination"></div>
 
-  <!-- БЛОК: CENTRAL ASIA ENERGY REPORTS -->
+  <!-- CENTRAL ASIA REPORTS -->
   <section class="detail-block" style="border-left: 4px solid var(--gold); margin-top: 50px;">
     <h2>Central Asia Energy Reports</h2>
     <p style="color:var(--muted); margin-bottom: 20px;">
@@ -73,41 +76,16 @@
     <table style="width:100%;">
       <thead><tr><th>Facility</th><th>Country</th><th>Damage (USD)</th><th>Report</th></tr></thead>
       <tbody>
-        <tr>
-          <td>Ekibastuz GRES-1 (Coal)</td>
-          <td>Kazakhstan</td>
-          <td>$500M</td>
-          <td><a href="report-ekibastuz.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0;">Read Report →</a></td>
-        </tr>
-        <tr>
-          <td>Bishkek Thermal Power Plant (Coal)</td>
-          <td>Kyrgyzstan</td>
-          <td>$200M</td>
-          <td><a href="report-bishkek-tec.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0;">Read Report →</a></td>
-        </tr>
-        <tr>
-          <td>Syrdarya 2 CCGT (Gas, Positive)</td>
-          <td>Uzbekistan</td>
-          <td>$0 (avoided)</td>
-          <td><a href="report-syrdarya-2.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0; background: var(--green); color: #000;">Read Report →</a></td>
-        </tr>
-        <tr>
-          <td>Nurek Hydropower Plant (Hydro, Positive)</td>
-          <td>Tajikistan</td>
-          <td>$0 (avoided)</td>
-          <td><a href="report-nurek-hpp.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0; background: var(--green); color: #000;">Read Report →</a></td>
-        </tr>
-        <tr>
-          <td>Turkmenistan Gas Power</td>
-          <td>Turkmenistan</td>
-          <td>$1B</td>
-          <td><a href="report-turkmenistan-gas.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0;">Read Report →</a></td>
-        </tr>
+        <tr><td>Ekibastuz GRES-1 (Coal)</td><td>Kazakhstan</td><td>$500M</td><td><a href="report-ekibastuz.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0;">Read Report →</a></td></tr>
+        <tr><td>Bishkek Thermal Power Plant (Coal)</td><td>Kyrgyzstan</td><td>$200M</td><td><a href="report-bishkek-tec.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0;">Read Report →</a></td></tr>
+        <tr><td>Syrdarya 2 CCGT (Gas, Positive)</td><td>Uzbekistan</td><td>$0 (avoided)</td><td><a href="report-syrdarya-2.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0; background: var(--green); color: #000;">Read Report →</a></td></tr>
+        <tr><td>Nurek Hydropower Plant (Hydro, Positive)</td><td>Tajikistan</td><td>$0 (avoided)</td><td><a href="report-nurek-hpp.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0; background: var(--green); color: #000;">Read Report →</a></td></tr>
+        <tr><td>Turkmenistan Gas Power</td><td>Turkmenistan</td><td>$1B</td><td><a href="report-turkmenistan-gas.html" class="btn-primary" style="padding: 4px 10px; font-size: 12px; margin-top: 0;">Read Report →</a></td></tr>
       </tbody>
     </table>
   </section>
 
-  <!-- БЛОК IFI TRACKER -->
+  <!-- IFI TRACKER -->
   <section class="detail-block" style="border-left: 4px solid var(--gold); margin-top: 50px;">
     <h2>Global Energy Projects (IFI Tracker)</h2>
     <p style="color:var(--muted); margin-bottom: 20px;">
@@ -160,6 +138,7 @@
     <a href="methodology.html">Methodology</a>
   </p>
 </footer>
+<script src="counter.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
