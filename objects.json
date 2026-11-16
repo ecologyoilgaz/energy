@@ -1,0 +1,649 @@
+{
+  "meta": {"count": 62, "updated": "2026-11-16", "currency": "USD", "note": "Coal, gas, hydro, nuclear. Sources: GEM, PowerAtlas, Climate TRACE, Ember."},
+  "objects": {
+    "belchatow-poland": {
+      "title": "Bełchatów Power Station — Poland",
+      "country": "Poland", "region": "Europe", "lat": 51.27, "lon": 19.47, "status": "red",
+      "claimed": "EU ETS compliance",
+      "actual": "Largest thermal power station in Europe; 5,030 MW coal; top EU ETS emitter; 27.36 Mt CO₂e in 2022 (Climate TRACE)",
+      "gap": "Highest-emitting power plant in EU",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Health and climate damage", "formula": "PM/SO₂ + CO₂ (estimate)"},
+      "solutions": [
+        {"name": "Accelerate retirement (planned 2030-2036)", "type": "Long", "effect": "Phase out coal", "cost": "Policy"},
+        {"name": "Flue gas desulfurization upgrade", "type": "Medium", "effect": "Reduce SO₂", "cost": "$200M"}
+      ],
+      "sources": ["Climate TRACE 2024", "GEM July 2026"], "companies": ["PGE GiEK"],
+      "documents": [{"name": "Climate TRACE Views From Above", "url": "https://climatetrace.org/news/views-from-above-belchatow-power-station-poland"}]
+    },
+    "huaneng-china": {
+      "title": "Huaneng Power International — China",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Ultra-low emission standards",
+      "actual": "Largest coal operator globally: 75.8 GW operating + 35.1 GW in development (GEM July 2026)",
+      "gap": "Scale vs abatement; China carbon intensity 513 gCO₂/kWh (May 2026)",
+      "financial_impact": {"loss_usd": 20000000000, "description": "Health and climate damage", "formula": "Health damage across fleet (estimate)"},
+      "solutions": [
+        {"name": "Advanced flue gas treatment", "type": "Medium", "effect": "Reduce SO₂/NOx", "cost": "$5B"},
+        {"name": "Capacity retirement", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}
+      ],
+      "sources": ["GEM July 2026", "Ember May 2026"], "companies": ["Huaneng Power International"],
+      "documents": []
+    },
+    "ntpc-india": {
+      "title": "NTPC Ltd — India",
+      "country": "India", "region": "Asia", "lat": 28.6, "lon": 77.2, "status": "red",
+      "claimed": "Growing capacity",
+      "actual": "62.9 GW operating + 23.3 GW in development (GEM July 2026); India carbon intensity 629 gCO₂/kWh (May 2026)",
+      "gap": "High carbon intensity + high population exposure",
+      "financial_impact": {"loss_usd": 15000000000, "description": "Health damage", "formula": "PM2.5 damage (estimate)"},
+      "solutions": [
+        {"name": "FGD installation", "type": "Medium", "effect": "Reduce SO₂", "cost": "$3B"}
+      ],
+      "sources": ["GEM July 2026", "Ember May 2026"], "companies": ["NTPC Ltd"],
+      "documents": []
+    },
+    "eskom-south-africa": {
+      "title": "Eskom Holdings — South Africa",
+      "country": "South Africa", "region": "Africa", "lat": -26.2, "lon": 28.0, "status": "red",
+      "claimed": "Load shedding mitigation",
+      "actual": "44.5 GW operating coal (GEM July 2026); major SO₂/PM emitter",
+      "gap": "High pollution + aging fleet",
+      "financial_impact": {"loss_usd": 8000000000, "description": "Health damage", "formula": "PM/SO₂ damage (estimate)"},
+      "solutions": [
+        {"name": "Retire old units", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"},
+        {"name": "FGD retrofit", "type": "Medium", "effect": "Reduce SO₂", "cost": "$2B"}
+      ],
+      "sources": ["GEM July 2026"], "companies": ["Eskom Holdings SOC Ltd"],
+      "documents": []
+    },
+    "shenhua-china": {
+      "title": "China Shenhua Energy — China",
+      "country": "China", "region": "Asia", "lat": 39.0, "lon": 110.0, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "56.5 GW operating + 11.8 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 15000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["China Shenhua Energy"],
+      "documents": []
+    },
+    "china-energy-investment": {
+      "title": "China Energy Investment Corp — China",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "61.3 GW operating + 17.5 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 16000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["China Energy Investment Corp"],
+      "documents": []
+    },
+    "china-resources-power": {
+      "title": "China Resources Power Holdings — China",
+      "country": "China", "region": "Asia", "lat": 22.3, "lon": 114.2, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "42.9 GW operating + 8.4 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 12000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["China Resources Power"],
+      "documents": []
+    },
+    "gd-power-china": {
+      "title": "GD POWER Development — China",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "41.7 GW operating + 9.9 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 11000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["GD POWER Development"],
+      "documents": []
+    },
+    "datang-china": {
+      "title": "Datang International Power — China",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "39.4 GW operating + 16.6 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 10000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Datang International"],
+      "documents": []
+    },
+    "huadian-china": {
+      "title": "Huadian Power International — China",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "38.0 GW operating + 18.9 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 10000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Huadian Power International"],
+      "documents": []
+    },
+    "kepco-south-korea": {
+      "title": "Korea Electric Power Corp — South Korea",
+      "country": "South Korea", "region": "Asia", "lat": 35.9, "lon": 127.7, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "35.7 GW operating coal (GEM July 2026); South Korea carbon intensity 379 gCO₂/kWh",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 6000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Coal phase-out", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026", "Ember Apr 2026"], "companies": ["KEPCO"],
+      "documents": []
+    },
+    "state-power-china": {
+      "title": "State Power Investment Corp — China",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "35.5 GW operating + 12.3 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 9000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["State Power Investment Corp"],
+      "documents": []
+    },
+    "zheneng-china": {
+      "title": "Zhejiang Zheneng Electric Power — China",
+      "country": "China", "region": "Asia", "lat": 30.3, "lon": 120.2, "status": "red",
+      "claimed": "Ultra-low emissions",
+      "actual": "33.4 GW operating + 6.9 GW in development (GEM July 2026)",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 8000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Capacity reduction", "type": "Long", "effect": "Lower emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Zheneng Electric Power"],
+      "documents": []
+    },
+    "adani-india": {
+      "title": "Adani Power Ltd — India",
+      "country": "India", "region": "Asia", "lat": 23.0, "lon": 72.6, "status": "red",
+      "claimed": "Growing capacity",
+      "actual": "17.9 GW operating + 25.8 GW in development (GEM July 2026)",
+      "gap": "Rapid coal expansion",
+      "financial_impact": {"loss_usd": 7000000000, "description": "Health damage", "formula": "Estimate"},
+      "solutions": [{"name": "FGD installation", "type": "Medium", "effect": "Reduce SO₂", "cost": "$2B"}],
+      "sources": ["GEM July 2026"], "companies": ["Adani Power"],
+      "documents": []
+    },
+    "japan-coal-fleet": {
+      "title": "Japan Coal Fleet — National",
+      "country": "Japan", "region": "Asia", "lat": 35.7, "lon": 139.7, "status": "red",
+      "claimed": "Efficient coal",
+      "actual": "Nearly one-third of Japan's coal capacity is >30 years old; carbon intensity 440 gCO₂/kWh (Mar 2026)",
+      "gap": "Aging fleet + high carbon intensity",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Retire old units", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["GEM", "Ember Mar 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "turkiye-coal-fleet": {
+      "title": "Türkiye Coal Fleet — National",
+      "country": "Türkiye", "region": "Europe", "lat": 39.9, "lon": 32.9, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "20.5 GW operating coal, average age 24 years; lignite plants inefficient (high SO₂/PM); 0.7 GW in development",
+      "gap": "Aging lignite fleet",
+      "financial_impact": {"loss_usd": 4000000000, "description": "Health damage", "formula": "Estimate"},
+      "solutions": [{"name": "Lignite phase-out", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["GEM 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "australia-coal-fleet": {
+      "title": "Australia Coal Fleet — National",
+      "country": "Australia", "region": "Oceania", "lat": -33.9, "lon": 151.2, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 568 gCO₂/kWh (Jun 2026); aging plants (Eraring, Callide) extended",
+      "gap": "High carbon intensity + extensions",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Accelerate retirements", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026", "GEM"], "companies": ["Various"],
+      "documents": []
+    },
+    "germany-coal-fleet": {
+      "title": "Germany Coal Fleet — National",
+      "country": "Germany", "region": "Europe", "lat": 51.2, "lon": 10.4, "status": "red",
+      "claimed": "Energiewende",
+      "actual": "Carbon intensity 275 gCO₂/kWh (Jun 2026); coal phase-out planned 2038",
+      "gap": "Slow phase-out",
+      "financial_impact": {"loss_usd": 4000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Accelerate coal exit", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026", "GEM"], "companies": ["Various"],
+      "documents": []
+    },
+    "russia-coal-fleet": {
+      "title": "Russia Coal Fleet — National",
+      "country": "Russia", "region": "Europe/Asia", "lat": 55.8, "lon": 37.6, "status": "red",
+      "claimed": "Energy security",
+      "actual": "Carbon intensity 398 gCO₂/kWh (May 2026); coal expansion in Siberia",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 6000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Gas/renewable substitution", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember May 2026", "GEM"], "companies": ["Various"],
+      "documents": []
+    },
+    "indonesia-coal-fleet": {
+      "title": "Indonesia Coal Fleet — National",
+      "country": "Indonesia", "region": "Asia", "lat": -6.2, "lon": 106.8, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Major coal developer (GEM top 10); high carbon intensity",
+      "gap": "Coal expansion",
+      "financial_impact": {"loss_usd": 4000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable acceleration", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "vietnam-coal-fleet": {
+      "title": "Vietnam Coal Fleet — National",
+      "country": "Vietnam", "region": "Asia", "lat": 21.0, "lon": 105.8, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Major coal developer (GEM top 10); only Southeast Asian country proposing new coal in H1 2026",
+      "gap": "New coal proposals",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Stop new coal", "type": "Fast", "effect": "Prevent lock-in", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "kazakhstan-coal-fleet": {
+      "title": "Kazakhstan Coal Fleet — National",
+      "country": "Kazakhstan", "region": "Central Asia", "lat": 51.2, "lon": 71.4, "status": "red",
+      "claimed": "Modernization",
+      "actual": "Top 10 coal developer (GEM); Ekibastuz GRES-1 violations documented",
+      "gap": "Coal dependence + regulatory violations",
+      "financial_impact": {"loss_usd": 2000000000, "description": "Health damage", "formula": "Estimate"},
+      "solutions": [{"name": "FGD + ash systems", "type": "Medium", "effect": "Reduce PM/SO₂", "cost": "$500M"}],
+      "sources": ["GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "zimbabwe-coal": {
+      "title": "Zimbabwe Coal Fleet — National",
+      "country": "Zimbabwe", "region": "Africa", "lat": -17.8, "lon": 31.0, "status": "red",
+      "claimed": "Energy security",
+      "actual": "Top 10 coal developer (GEM July 2026)",
+      "gap": "Coal expansion",
+      "financial_impact": {"loss_usd": 1000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable alternatives", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "bangladesh-coal": {
+      "title": "Bangladesh Coal Fleet — National",
+      "country": "Bangladesh", "region": "Asia", "lat": 23.7, "lon": 90.4, "status": "red",
+      "claimed": "Energy access",
+      "actual": "Top 10 coal developer (GEM July 2026)",
+      "gap": "Coal expansion",
+      "financial_impact": {"loss_usd": 1500000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Leapfrog to renewables", "type": "Long", "effect": "Avoid lock-in", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "mongolia-coal": {
+      "title": "Mongolia Coal Fleet — National",
+      "country": "Mongolia", "region": "Asia", "lat": 47.9, "lon": 106.9, "status": "red",
+      "claimed": "Energy security",
+      "actual": "Top 10 coal developer (GEM July 2026)",
+      "gap": "Coal expansion",
+      "financial_impact": {"loss_usd": 800000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable + efficiency", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "us-coal-fleet": {
+      "title": "US Coal Fleet — National",
+      "country": "USA", "region": "North America", "lat": 38.9, "lon": -77.0, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 357 gCO₂/kWh (Jun 2026); 98 GW of fleet has announced retirement by 2040",
+      "gap": "Slow retirement + policy support",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Accelerate retirements", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026", "GEM July 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "poland-coal-fleet": {
+      "title": "Poland Coal Fleet — National",
+      "country": "Poland", "region": "Europe", "lat": 52.2, "lon": 21.0, "status": "red",
+      "claimed": "Energy security",
+      "actual": "Carbon intensity 617 gCO₂/kWh (Jun 2026); Bełchatów is EU's top emitter",
+      "gap": "Highest EU carbon intensity",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Accelerate coal exit", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026", "Climate TRACE"], "companies": ["PGE et al."],
+      "documents": []
+    },
+    "serbia-coal": {
+      "title": "Serbia Coal Fleet — National",
+      "country": "Serbia", "region": "Europe", "lat": 44.8, "lon": 20.5, "status": "red",
+      "claimed": "EU accession",
+      "actual": "Carbon intensity 734 gCO₂/kWh (Jun 2026) — highest in dataset",
+      "gap": "Highest carbon intensity in Europe",
+      "financial_impact": {"loss_usd": 1000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Coal phase-out", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026"], "companies": ["EPS"],
+      "documents": []
+    },
+    "philippines-coal": {
+      "title": "Philippines Coal Fleet — National",
+      "country": "Philippines", "region": "Asia", "lat": 14.6, "lon": 121.0, "status": "red",
+      "claimed": "Energy access",
+      "actual": "Carbon intensity 651 gCO₂/kWh (Jun 2026)",
+      "gap": "High carbon intensity",
+      "financial_impact": {"loss_usd": 2000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable acceleration", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "taiwan-coal": {
+      "title": "Taiwan Coal Fleet — National",
+      "country": "Taiwan", "region": "Asia", "lat": 25.0, "lon": 121.5, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 644 gCO₂/kWh (May 2026)",
+      "gap": "High carbon intensity",
+      "financial_impact": {"loss_usd": 1500000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Gas/renewable substitution", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember May 2026"], "companies": ["Taipower"],
+      "documents": []
+    },
+    "malaysia-coal": {
+      "title": "Malaysia Coal Fleet — National",
+      "country": "Malaysia", "region": "Asia", "lat": 3.1, "lon": 101.7, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 639 gCO₂/kWh (May 2026)",
+      "gap": "High carbon intensity",
+      "financial_impact": {"loss_usd": 1200000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable acceleration", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember May 2026"], "companies": ["TNB"],
+      "documents": []
+    },
+    "thailand-coal": {
+      "title": "Thailand Coal Fleet — National",
+      "country": "Thailand", "region": "Asia", "lat": 13.7, "lon": 100.5, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 526 gCO₂/kWh (Apr 2026)",
+      "gap": "High carbon intensity",
+      "financial_impact": {"loss_usd": 1000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable acceleration", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember Apr 2026"], "companies": ["EGAT"],
+      "documents": []
+    },
+    "mexico-coal": {
+      "title": "Mexico Coal Fleet — National",
+      "country": "Mexico", "region": "North America", "lat": 19.4, "lon": -99.1, "status": "red",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 496 gCO₂/kWh (May 2026)",
+      "gap": "High carbon intensity",
+      "financial_impact": {"loss_usd": 1500000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable acceleration", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["Ember May 2026"], "companies": ["CFE"],
+      "documents": []
+    },
+    "singapore-gas": {
+      "title": "Singapore Gas Fleet — National",
+      "country": "Singapore", "region": "Asia", "lat": 1.35, "lon": 103.8, "status": "red",
+      "claimed": "Efficient gas",
+      "actual": "Carbon intensity 468 gCO₂/kWh (Feb 2026); gas-dependent",
+      "gap": "High carbon intensity for gas",
+      "financial_impact": {"loss_usd": 500000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Regional grid + renewables", "type": "Long", "effect": "Reduce intensity", "cost": "Policy"}],
+      "sources": ["Ember Feb 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "uae-gas": {
+      "title": "UAE Gas Fleet — National",
+      "country": "UAE", "region": "Middle East", "lat": 24.4, "lon": 54.4, "status": "red",
+      "claimed": "Energy diversification",
+      "actual": "Gas-dependent; Shuweihat S1 CCGT 4,889 MW, 6.4 Mt CO₂/yr (Climate TRACE)",
+      "gap": "Gas lock-in",
+      "financial_impact": {"loss_usd": 2000000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Solar + nuclear", "type": "Long", "effect": "Reduce gas share", "cost": "Policy"}],
+      "sources": ["PowerAtlas 2026", "Climate TRACE"], "companies": ["Various"],
+      "documents": []
+    },
+    "saudi-gas": {
+      "title": "Saudi Arabia Gas Fleet — National",
+      "country": "Saudi Arabia", "region": "Middle East", "lat": 24.7, "lon": 46.7, "status": "red",
+      "claimed": "Vision 2030",
+      "actual": "Gas expansion; Ghazlan CCGT 4,256 MW, 16.0 Mt CO₂/yr (Climate TRACE)",
+      "gap": "Gas lock-in",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Solar + CCUS", "type": "Long", "effect": "Reduce emissions", "cost": "Policy"}],
+      "sources": ["PowerAtlas 2026"], "companies": ["SEC"],
+      "documents": []
+    },
+    "japan-gas": {
+      "title": "Japan Gas Fleet — National",
+      "country": "Japan", "region": "Asia", "lat": 35.7, "lon": 139.7, "status": "red",
+      "claimed": "Efficient gas",
+      "actual": "Higashi Niigata 4,810 MW, 6.45 Mt CO₂/yr; Kashima 4,400 MW, 3.22 Mt CO₂/yr (Climate TRACE)",
+      "gap": "Gas dependence",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable + nuclear restart", "type": "Long", "effect": "Reduce gas", "cost": "Policy"}],
+      "sources": ["PowerAtlas 2026"], "companies": ["Tohoku, Tokyo Electric"],
+      "documents": []
+    },
+    "china-gas": {
+      "title": "China Gas Fleet — National",
+      "country": "China", "region": "Asia", "lat": 39.9, "lon": 116.4, "status": "red",
+      "claimed": "Clean transition",
+      "actual": "Guangdong Shajiao CCGT 3,970 MW (pre-construction); gas expanding alongside coal",
+      "gap": "Gas lock-in",
+      "financial_impact": {"loss_usd": 4000000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Leapfrog to renewables", "type": "Long", "effect": "Avoid gas lock-in", "cost": "Policy"}],
+      "sources": ["PowerAtlas 2026"], "companies": ["Guangdong Guanghope"],
+      "documents": []
+    },
+    "us-gas": {
+      "title": "US Gas Fleet — National",
+      "country": "USA", "region": "North America", "lat": 38.9, "lon": -77.0, "status": "red",
+      "claimed": "Efficient gas",
+      "actual": "Large CCGT fleet; carbon intensity 357 gCO₂/kWh (grid avg)",
+      "gap": "Gas dependence",
+      "financial_impact": {"loss_usd": 5000000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable + storage", "type": "Long", "effect": "Reduce gas", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026", "PowerAtlas 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "eu-gas": {
+      "title": "EU Gas Fleet — Regional",
+      "country": "European Union", "region": "Europe", "lat": 50.8, "lon": 4.4, "status": "red",
+      "claimed": "Green Deal",
+      "actual": "Carbon intensity 189 gCO₂/kWh (Jun 2026); gas bridge role",
+      "gap": "Gas lock-in",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Climate", "formula": "Estimate"},
+      "solutions": [{"name": "Renewable acceleration", "type": "Long", "effect": "Reduce gas", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026"], "companies": ["Various"],
+      "documents": []
+    },
+    "sweden-norway-hydro": {
+      "title": "Sweden & Norway Hydro/Nuclear — Green Example",
+      "country": "Sweden/Norway", "region": "Europe", "lat": 59.9, "lon": 10.7, "status": "green",
+      "claimed": "Low-carbon grid",
+      "actual": "Carbon intensity 27 gCO₂/kWh (Jun 2026) — lowest in dataset",
+      "gap": "N/A",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Replicate model", "type": "Long", "effect": "Low-carbon grid", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026"], "companies": ["Vattenfall, Statkraft"],
+      "documents": []
+    },
+    "france-nuclear": {
+      "title": "France Nuclear Fleet — Green Example",
+      "country": "France", "region": "Europe", "lat": 48.9, "lon": 2.3, "status": "green",
+      "claimed": "Low-carbon grid",
+      "actual": "Carbon intensity 30 gCO₂/kWh (Jun 2026)",
+      "gap": "N/A",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Maintain + extend", "type": "Long", "effect": "Low-carbon grid", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026"], "companies": ["EDF"],
+      "documents": []
+    },
+    "brazil-hydro": {
+      "title": "Brazil Hydro Fleet — Green Example",
+      "country": "Brazil", "region": "South America", "lat": -15.8, "lon": -47.9, "status": "green",
+      "claimed": "Low-carbon grid",
+      "actual": "Carbon intensity 86 gCO₂/kWh (Apr 2026); hydro-dominated",
+      "gap": "N/A",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Maintain + add wind/solar", "type": "Long", "effect": "Keep low carbon", "cost": "Policy"}],
+      "sources": ["Ember Apr 2026"], "companies": ["Eletrobras"],
+      "documents": []
+    },
+    "canada-hydro": {
+      "title": "Canada Hydro Fleet — Green Example",
+      "country": "Canada", "region": "North America", "lat": 45.4, "lon": -75.7, "status": "green",
+      "claimed": "Low-carbon grid",
+      "actual": "Carbon intensity 166 gCO₂/kWh (Apr 2026)",
+      "gap": "N/A",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Maintain", "type": "Long", "effect": "Keep low carbon", "cost": "Policy"}],
+      "sources": ["Ember Apr 2026"], "companies": ["Hydro-Québec et al."],
+      "documents": []
+    },
+    "ekibastuz-gres-1": {
+      "title": "Ekibastuz GRES-1 — Kazakhstan",
+      "country": "Kazakhstan", "region": "Central Asia", "lat": 51.87, "lon": 75.30, "status": "red",
+      "claimed": "Emissions within normative limits",
+      "actual": "High-ash coal; Q4 2025 emissions 60,110 t vs limit 62,361 t; CO exceedances and unauthorized waste documented",
+      "gap": "Regulatory violations; citizens report ash fallout",
+      "financial_impact": {"loss_usd": 500000000, "description": "Health and environmental damage", "formula": "PM/SO₂/NOx damage + remediation (estimate)"},
+      "solutions": [
+        {"name": "Install gas-phase purification", "type": "Medium", "effect": "Capture SO₂/NOx", "cost": "$150M"},
+        {"name": "Ash collection upgrade", "type": "Fast", "effect": "Reduce PM", "cost": "$30M"}
+      ],
+      "sources": ["Ekibastuz GRES-1 Environmental Report 2025"], "companies": ["LLP Ekibastuz GRES-1"],
+      "documents": [{"name": "Environmental Report Q4 2025", "url": "https://gres1.kz/en/news.php?slug=explanatory-note-to-the-report-on-industrial-environmental-control-of-llp-ekibastuz-gres-1-named-after-bulat-nurzhanov-for-the-4th-quarter-of-2025"}]
+    },
+    "bishkek-tec": {
+      "title": "Bishkek Thermal Power Plant — Kyrgyzstan",
+      "country": "Kyrgyzstan", "region": "Central Asia", "lat": 42.87, "lon": 74.59, "status": "red",
+      "claimed": "Measures taken to reduce emissions",
+      "actual": "Only major source of electricity/heat in northern Kyrgyzstan; 14 regulatory orders (8 fulfilled, 6 pending)",
+      "gap": "Pending regulatory compliance; coal dependence in winter",
+      "financial_impact": {"loss_usd": 200000000, "description": "Air quality and health impacts in Bishkek", "formula": "PM/NOx damage (estimate)"},
+      "solutions": [
+        {"name": "Complete pending 6 orders", "type": "Fast", "effect": "Compliance", "cost": "$10M"},
+        {"name": "Scrubber/ESP upgrade", "type": "Medium", "effect": "Reduce PM/SO₂", "cost": "$50M"}
+      ],
+      "sources": ["Ministry of Natural Resources Kyrgyzstan 2025"], "companies": ["Bishkek TEC"],
+      "documents": [{"name": "Ministry Visit Report", "url": "https://www.mnr.gov.kg/en/posts/news/ministr-mmasiev-posetil-tec-gbiskek"}]
+    },
+    "syrdarya-2-ccgt": {
+      "title": "Syrdarya 2 CCGT — Uzbekistan",
+      "country": "Uzbekistan", "region": "Central Asia", "lat": 40.85, "lon": 68.66, "status": "green",
+      "claimed": "Efficient combined-cycle gas generation",
+      "actual": "World Bank project; EIRR 9.3% with carbon benefits; avoids baseline emissions vs coal",
+      "gap": "N/A (positive example)",
+      "financial_impact": {"loss_usd": 0, "description": "Avoided emissions benefit", "formula": "N/A"},
+      "solutions": [{"name": "Replicate CCGT model", "type": "Medium", "effect": "Lower carbon intensity", "cost": "$500M"}],
+      "sources": ["World Bank P174323"], "companies": ["Syrdarya 2 CCGT"],
+      "documents": [{"name": "World Bank Project Document", "url": "https://documents1.worldbank.org/curated/en/099042023104531776/txt/BOSIB08c17085c0af092500891d0bd2e7e0.txt"}]
+    },
+    "nurek-hpp": {
+      "title": "Nurek Hydropower Plant — Tajikistan",
+      "country": "Tajikistan", "region": "Central Asia", "lat": 38.37, "lon": 69.35, "status": "green",
+      "claimed": "Clean hydropower",
+      "actual": "Rehabilitation yields 69 Mt CO₂e net reduction vs baseline; NPV $2.08B",
+      "gap": "N/A (positive example)",
+      "financial_impact": {"loss_usd": 0, "description": "Avoided CO₂ benefits", "formula": "N/A"},
+      "solutions": [{"name": "Complete rehabilitation of 9 units", "type": "Long", "effect": "Maximize clean output", "cost": "$500M"}],
+      "sources": ["World Bank P173804"], "companies": ["Nurek HPP"],
+      "documents": [{"name": "World Bank Project Document", "url": "https://documents1.worldbank.org/curated/en/454511593482928270/pdf/Tajikistan-Second-Phase-of-Nurek-Hydropower-Rehabilitation-Project.pdf"}]
+    },
+    "turkmenistan-gas": {
+      "title": "Turkmenistan Gas Power — National",
+      "country": "Turkmenistan", "region": "Central Asia", "lat": 37.95, "lon": 58.38, "status": "red",
+      "claimed": "Modernization",
+      "actual": "Gas-dependent; inefficient Soviet-era plants; high methane leakage upstream",
+      "gap": "Gas lock-in + methane",
+      "financial_impact": {"loss_usd": 1000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "CCGT upgrade", "type": "Medium", "effect": "Efficiency", "cost": "$300M"}],
+      "sources": ["GEM", "Climate TRACE"], "companies": ["Turkmenenergo"],
+      "documents": []
+    },
+    "uzbekistan-gas": {
+      "title": "Uzbekistan Gas Power — National",
+      "country": "Uzbekistan", "region": "Central Asia", "lat": 41.3, "lon": 69.2, "status": "red",
+      "claimed": "Modernization",
+      "actual": "Gas-dependent; aging plants; Syrdarya 2 is positive exception",
+      "gap": "Inefficient gas use",
+      "financial_impact": {"loss_usd": 1500000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "CCGT conversion", "type": "Medium", "effect": "Efficiency", "cost": "$500M"}],
+      "sources": ["World Bank", "GEM"], "companies": ["Uzbekenergo"],
+      "documents": []
+    },
+    "kyrgyzstan-hydro": {
+      "title": "Kyrgyzstan Hydro Fleet — National",
+      "country": "Kyrgyzstan", "region": "Central Asia", "lat": 42.9, "lon": 74.6, "status": "green",
+      "claimed": "Clean hydropower",
+      "actual": "Hydro-dominated grid; low carbon intensity",
+      "gap": "N/A (positive example)",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Expand hydro + regional trade", "type": "Long", "effect": "Low-carbon growth", "cost": "Policy"}],
+      "sources": ["Ember", "World Bank"], "companies": ["Kyrgyzenergo"],
+      "documents": []
+    },
+    "tajikistan-hydro": {
+      "title": "Tajikistan Hydro Fleet — National",
+      "country": "Tajikistan", "region": "Central Asia", "lat": 38.5, "lon": 68.8, "status": "green",
+      "claimed": "Clean hydropower",
+      "actual": "Hydro-dominated; Nurek is key asset",
+      "gap": "N/A (positive example)",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Complete rehabilitation", "type": "Long", "effect": "Maximize clean output", "cost": "$500M"}],
+      "sources": ["World Bank"], "companies": ["Barqi Tojik"],
+      "documents": []
+    },
+    "kazakhstan-gas": {
+      "title": "Kazakhstan Gas Power — National",
+      "country": "Kazakhstan", "region": "Central Asia", "lat": 51.2, "lon": 71.4, "status": "red",
+      "claimed": "Modernization",
+      "actual": "Coal-dominated; gas growing but still small share",
+      "gap": "Coal dependence",
+      "financial_impact": {"loss_usd": 3000000000, "description": "Health and climate", "formula": "Estimate"},
+      "solutions": [{"name": "Gas substitution for coal", "type": "Medium", "effect": "Lower emissions", "cost": "$1B"}],
+      "sources": ["GEM", "Ember"], "companies": ["KEGOC"],
+      "documents": []
+    },
+    "south-africa-renewables": {
+      "title": "South Africa REIPPPP — Green Example",
+      "country": "South Africa", "region": "Africa", "lat": -26.2, "lon": 28.0, "status": "green",
+      "claimed": "Renewable procurement",
+      "actual": "Successful REIPPPP program; but coal still dominant (Eskom 44.5 GW)",
+      "gap": "N/A (positive but insufficient scale)",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Scale renewables", "type": "Long", "effect": "Displace coal", "cost": "Policy"}],
+      "sources": ["GEM", "Ember"], "companies": ["Various IPPs"],
+      "documents": []
+    },
+    "morocco-solar": {
+      "title": "Morocco Solar (Noor) — Green Example",
+      "country": "Morocco", "region": "Africa", "lat": 31.0, "lon": -7.0, "status": "green",
+      "claimed": "Renewable leadership",
+      "actual": "Noor Ouarzazate complex; but grid still gas/coal-heavy",
+      "gap": "N/A (positive example)",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Scale solar + grid", "type": "Long", "effect": "Displace fossil", "cost": "Policy"}],
+      "sources": ["World Bank"], "companies": ["MASEN"],
+      "documents": []
+    },
+    "chile-solar": {
+      "title": "Chile Solar — Green Example",
+      "country": "Chile", "region": "South America", "lat": -33.4, "lon": -70.6, "status": "green",
+      "claimed": "Renewable leadership",
+      "actual": "Atacama solar; grid carbon intensity falling",
+      "gap": "N/A (positive example)",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Storage + transmission", "type": "Long", "effect": "Maximize RE", "cost": "Policy"}],
+      "sources": ["Ember"], "companies": ["Various"],
+      "documents": []
+    },
+    "germany-renewables": {
+      "title": "Germany Energiewende — Green Example",
+      "country": "Germany", "region": "Europe", "lat": 51.2, "lon": 10.4, "status": "green",
+      "claimed": "Energy transition",
+      "actual": "Carbon intensity 275 gCO₂/kWh (Jun 2026); but coal still 2038 phase-out",
+      "gap": "N/A (positive but slow)",
+      "financial_impact": {"loss_usd": 0, "description": "Positive example", "formula": "N/A"},
+      "solutions": [{"name": "Accelerate coal exit", "type": "Long", "effect": "Lower intensity", "cost": "Policy"}],
+      "sources": ["Ember Jun 2026"], "companies": ["Various"],
+      "documents": []
+    }
+  }
+}
