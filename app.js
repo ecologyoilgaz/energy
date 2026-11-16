@@ -1,6 +1,4 @@
-let OBJECTS = {};
-let filtered = [];
-let currentPage = 1;
+let OBJECTS = {}, filtered = [], currentPage = 1;
 const PER_PAGE = 12;
 
 async function loadData() {
@@ -13,9 +11,9 @@ async function loadData() {
     renderStats();
     renderCards();
   } catch (e) {
-    console.error('Failed to load objects.json', e);
+    console.error(e);
     const cards = document.getElementById('cards');
-    if (cards) cards.innerHTML = '<p style="color:red;">Error loading data: ' + e.message + '</p>';
+    if (cards) cards.innerHTML = '<p style="color:red">Error loading data</p>';
   }
 }
 
@@ -25,13 +23,12 @@ function renderStats() {
   const total = filtered.length;
   const red = filtered.filter(o => o.status === 'red').length;
   const green = filtered.filter(o => o.status === 'green').length;
-  const totalLoss = filtered.reduce((sum, o) => sum + (o.financial_impact?.loss_usd || 0), 0);
-  const totalLossFormatted = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(totalLoss);
+  const loss = filtered.reduce((s, o) => s + (o.financial_impact?.loss_usd || 0), 0);
   el.innerHTML = `
     <div class="stat"><span class="num">${total}</span><span class="label">Objects</span></div>
-    <div class="stat"><span class="num" style="color:var(--red)">${red}</span><span class="label">Gaps (🔴)</span></div>
-    <div class="stat loss-icon"><span class="num" style="color:var(--red); font-size: 24px;">${totalLossFormatted}</span><span class="label">Estimated Loss (USD)</span></div>
-    <div class="stat"><span class="num" style="color:var(--green)">${green}</span><span class="label">Verified (🟢)</span></div>
+    <div class="stat"><span class="num" style="color:var(--red)">${red}</span><span class="label">Gaps</span></div>
+    <div class="stat"><span class="num" style="color:var(--red);font-size:20px;">${new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(loss)}</span><span class="label">Est. Loss</span></div>
+    <div class="stat"><span class="num" style="color:var(--green)">${green}</span><span class="label">Verified</span></div>
   `;
 }
 
@@ -39,22 +36,20 @@ function renderCards() {
   const el = document.getElementById('cards');
   if (!el) return;
   const start = (currentPage - 1) * PER_PAGE;
-  const pageItems = filtered.slice(start, start + PER_PAGE);
-  el.innerHTML = pageItems.map(o => {
-    let priceHtml = '';
+  const items = filtered.slice(start, start + PER_PAGE);
+  el.innerHTML = items.map(o => {
+    let price = '';
     if (o.financial_impact?.loss_usd) {
-      const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(o.financial_impact.loss_usd);
-      priceHtml = `<div class="card-meta" style="color:var(--red); font-weight:bold; margin-top:6px;">Loss: ${usd}</div>`;
+      const usd = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(o.financial_impact.loss_usd);
+      price = `<div class="card-meta" style="color:var(--red);font-weight:bold;margin-top:6px;">Loss: ${usd}</div>`;
     }
-    return `
-      <a href="object.html?id=${o.id}" class="card ${o.status}">
-        <div class="card-title">${o.title}</div>
-        <div class="card-meta"><strong>Claimed:</strong> ${o.claimed}</div>
-        <div class="card-meta"><strong>Actual:</strong> ${o.actual}</div>
-        ${priceHtml}
-        <div class="card-country">${o.country} · ${o.region}</div>
-      </a>
-    `;
+    return `<a href="object.html?id=${o.id}" class="card ${o.status}">
+      <div class="card-title">${o.title}</div>
+      <div class="card-meta"><strong>Claimed:</strong> ${o.claimed}</div>
+      <div class="card-meta"><strong>Actual:</strong> ${o.actual}</div>
+      ${price}
+      <div class="card-country">${o.country} · ${o.region}</div>
+    </a>`;
   }).join('');
   renderPagination();
 }
@@ -79,7 +74,7 @@ function applyFilters() {
   filtered = Object.entries(OBJECTS).map(([id, o]) => ({ id, ...o })).filter(o => {
     if (status && o.status !== status) return false;
     if (region && o.region !== region) return false;
-    if (search && !(`${o.title} ${o.country} ${(o.companies||[]).join(' ')}`).toLowerCase().includes(search)) return false;
+    if (search && !`${o.title} ${o.country}`.toLowerCase().includes(search)) return false;
     return true;
   });
   currentPage = 1;
