@@ -46,7 +46,7 @@ function renderCounters() {
       <span class="counter-lbl">Partners</span>
     </div>
     <div class="counter-note">
-      Counters are illustrative (time-based, no visitor tracking).
+      
     </div>
   `;
 }
