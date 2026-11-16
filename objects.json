@@ -1,5 +1,5 @@
 {
-  "meta": {"count": 62, "updated": "2026-11-16", "currency": "USD", "note": "Coal, gas, hydro, nuclear. Sources: GEM, PowerAtlas, Climate TRACE, Ember."},
+  "meta": {"count": 62, "updated": "2026-11-16", "currency": "USD"},
   "objects": {
     "belchatow-poland": {
       "title": "Bełchatów Power Station — Poland",
@@ -36,9 +36,7 @@
       "actual": "62.9 GW operating + 23.3 GW in development (GEM July 2026); India carbon intensity 629 gCO₂/kWh (May 2026)",
       "gap": "High carbon intensity + high population exposure",
       "financial_impact": {"loss_usd": 15000000000, "description": "Health damage", "formula": "PM2.5 damage (estimate)"},
-      "solutions": [
-        {"name": "FGD installation", "type": "Medium", "effect": "Reduce SO₂", "cost": "$3B"}
-      ],
+      "solutions": [{"name": "FGD installation", "type": "Medium", "effect": "Reduce SO₂", "cost": "$3B"}],
       "sources": ["GEM July 2026", "Ember May 2026"], "companies": ["NTPC Ltd"],
       "documents": []
     },
