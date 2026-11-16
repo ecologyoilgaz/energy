@@ -45,7 +45,7 @@ function renderCounters() {
       <span class="counter-val">${formatNumber(partners)}</span>
       <span class="counter-lbl">Partners</span>
     </div>
-    <div class="counter-note">
+    
       
     </div>
   `;
