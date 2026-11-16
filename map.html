@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Map — Water Ecology</title>
+<title>Map — Energy Ecology</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-  <div class="logo"><img src="logo-header.png" alt="Logo"> Water Ecology Map</div>
+  <div class="logo"><img src="energy-logo.png" alt="Logo"> Energy Ecology Map</div>
   <nav>
     <a href="index.html">Home</a>
     <a href="map.html" class="active">Map</a>
@@ -23,7 +23,7 @@
   </nav>
 </header>
 <main>
-  <h1>Global Water Map</h1>
+  <h1>Global Energy Map</h1>
   <div class="legend">
     <span><i class="dot red"></i> Gap</span><span><i class="dot green"></i> Verified</span><span><i class="dot gray"></i> Pending</span>
   </div>
@@ -39,6 +39,6 @@
 </footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="app.js"></script>
-<script>document.addEventListener('DOMContentLoaded', () => setTimeout(renderMap, 500));</script>
+<script>document.addEventListener('DOMContentLoaded', () => setTimeout(() => { if (typeof renderMap === 'function') renderMap(); }, 300));</script>
 </body>
 </html>
